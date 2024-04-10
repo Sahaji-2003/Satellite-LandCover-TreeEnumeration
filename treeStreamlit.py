@@ -1,7 +1,17 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-
+import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings("ignore")
+from deepforest import main
+from deepforest import get_data
+model = main.deepforest()
+model.use_release()
+def count(img):
+    sample_image_path = get_data(img)
+    cnt = model.predict_tile(img, return_plot = True,iou_threshold=0.4, patch_size=250)
+    return cnt
 def save_image(image, filename):
     image.save(filename)
 
@@ -15,17 +25,14 @@ def main():
         # Display original image
         original_image = Image.open(uploaded_image)
         st.image(original_image, caption='Original Image', use_column_width=True)
-        tree
-        # Convert image to grayscale
-        grayscale_image = to_grayscale(original_image)
-        st.image(grayscale_image, caption='Grayscale Image', use_column_width=True)
-
+        imagrArr = count(original_image)
+        im = Image.fromarray(imageArr)
+        count_of_trees = len(imageArr)
         # Save modified image
-        save_image(grayscale_image, 'grayscale_image.jpg')
-
+        save_image(im,"count.jpg")
         # Display saved image
-        saved_image = Image.open('grayscale_image.jpg')
-        st.image(saved_image, caption='Saved Image', use_column_width=True)
+        saved_image = Image.open('count.jpg')
+        st.image(saved_image, caption='e', use_column_width=True)
 
 if __name__ == '__main__':
     main()
