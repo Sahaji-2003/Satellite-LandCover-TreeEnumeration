@@ -57,10 +57,10 @@ def calculate_class_percentage(mask_image_path):
     
     # Define the HSV ranges for each class
     class_ranges = {
-        'building': ((110, 50, 50), (130, 255, 255)),   # Blue color for buildings
-        'land': ((130, 50, 50),  (170, 255, 255)),      # Updated HSV range for land
+        'building': ((10, 10, 10),  (21, 255, 255)),   # Blue color for buildings
+        'land': ((110, 50, 50), (130, 255, 255)),      # Updated HSV range for land
         'road': ((90, 50, 50), (110, 255, 255)), 
-        'water': ((10, 10, 10),  (21, 255, 255)),     # Updated HSV range for roads
+        'water': ((130, 50, 50),  (170, 255, 255)),     # Updated HSV range for roads
         'vegetation': ((22, 10, 10),  (38, 255, 255)),  # Updated HSV range for vegetation
     }
     
@@ -284,7 +284,7 @@ def main():
         # Preprocess the uploaded image
         image = cv2.imdecode(np.fromstring(uploaded_file.read(), np.uint8), cv2.IMREAD_COLOR)
         processed_image = preprocess_image(image)
-
+        
         # Perform prediction
         predicted_mask = predict_mask(model, processed_image)
 
