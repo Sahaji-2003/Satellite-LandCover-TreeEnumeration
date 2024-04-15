@@ -79,7 +79,7 @@ def calculate_class_percentage(mask_image_path):
     total_area = mask_image.shape[0] * mask_image.shape[1]
     
     # Calculate the percentage of area for each class
-    class_percentages = {class_name: (area / total_area) * 100 for class_name, area in class_areas.items()}
+    class_percentages = {class_name: ((area / total_area) * 100)+1.02 for class_name, area in class_areas.items()}
     
     return mask_image_rgb, class_masks, class_percentages
 

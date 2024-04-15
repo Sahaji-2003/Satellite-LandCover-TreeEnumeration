@@ -14,8 +14,8 @@ def count(model1,img):
     return len(cnt)
 
 def main():
-    from DeepForest import main
-    from DeepForest import get_data
+    from deepforest import main
+    from deepforest import get_data
     model1 = main.deepforest()
     model1.use_release()
     sample_image_path = get_data("treeImage.jpg")
