@@ -21,6 +21,11 @@ Accurate land cover classification and tree enumeration are crucial for various 
 - **Streamlit:** Web application framework used for building the user interface.
 - **HTML/CSS/JavaScript:** Frontend technologies used for designing and interacting with the Streamlit app.
 
+## User Interface 
+![Screenshot 2024-04-19 224109](https://github.com/Sahaji-2003/Satellite-LandCover-TreeEnumeration/assets/130205533/c0fc50da-73a7-46c5-8752-342920e1f6b1)
+![Screenshot 2024-04-19 230130](https://github.com/Sahaji-2003/Satellite-LandCover-TreeEnumeration/assets/130205533/37bce9ac-6fde-4ea5-80a9-572bae0b7971)
+
+
 ## Usage
 
 1. **Clone the repository:**
