@@ -26,6 +26,9 @@ Accurate land cover classification and tree enumeration are crucial for various 
 ![ui2](https://github.com/Sahaji-2003/Satellite-LandCover-TreeEnumeration/assets/130205533/37bce9ac-6fde-4ea5-80a9-572bae0b7971)
 
 
+### Link For Model 
+https://drive.google.com/file/d/1WKsJLJJU5NmVHolTtHw64UZ_RxolcJ1c/view?usp=sharing
+
 ## Usage
 
 1. **Clone the repository:**
