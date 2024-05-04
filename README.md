@@ -2,8 +2,12 @@
 
 Welcome to the Satellite-LandCover and Tree Enumeration project! This project utilizes state-of-the-art Deep Learning models to perform semantic segmentation on satellite or drone imagery, predicting land cover classes, and counting the number of trees using crown detection. The project also includes a user-friendly interface built with Streamlit for seamless interaction.
 
-#Land Cover Prediction 5 Classes
+## Land Cover Prediction 5 Classes
 ![PREDICTED](https://github.com/Sahaji-2003/Satellite-LandCover-TreeEnumeration/assets/130205533/83ce79eb-27e5-4cf2-afa3-702b5b583204)
+
+## Tree Enumeration 
+![TREE-ENUMERATION](https://github.com/Sahaji-2003/Satellite-LandCover-TreeEnumeration/assets/130205533/346a5d7d-df25-4198-97ff-13dcaff0e14d)
+
 
 ## Overview
 
